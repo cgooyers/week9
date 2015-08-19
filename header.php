@@ -18,11 +18,9 @@
 
 <body <?php body_class(); ?>>
 
-<header>
-  
-  <!-- <div class="hamburger">
-      <i class="fa fa-bars fa-2x"></i>
-  </div> -->
+<header class="main-header">
+  <h1>Christina Codes</h1>
+
   <div class="button-container">
    <button class="hamburger hamburger-plus">
      <span>toggle menu</span>

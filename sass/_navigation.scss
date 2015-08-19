@@ -1,8 +1,9 @@
 ul.menu {
-	margin: 0;
 	padding: 0;
+	display: flex;
+    justify-content: flex-end;
+    margin: 15px 100px 0 0;
 	li {
-		display: inline;
 		margin-right: 10px;
 		a {
 			color: #333;
@@ -10,5 +11,9 @@ ul.menu {
 			background: #333;
 			color: white;
 		}
+	}
+	li,
+	a {
+		display: inline-block;
 	}
 }
