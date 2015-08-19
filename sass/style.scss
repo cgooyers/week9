@@ -58,9 +58,48 @@ section.content, section {
 }
 
 
+// HEADER STYLES
+
+
+.hamburger {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 10px;
+   	vertical-align: middle;
+   	i {
+	   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	   backface-visibility: hidden;
+	   -moz-osx-font-smoothing: grayscale;
+	   transition: all 0.3s ease;
+	   transform: translateZ(0) scale(1);
+	   &:hover, 
+	   &:focus, 
+	   &:active {
+	   	transform: scale(1.2);
+	   }
+   	}
+}
+
+
+.header-container {
+	display: none;
+	&.show {
+		display: block;
+	}
+	
+}
 
 
 
+//FOOTER STYLES
+footer {
+	background: white;
+	color: black;
+	text-align: center;
 
-
-
+	p {
+		margin: 0;
+		padding: 10px 0;
+		font-size: 12px;
+	}
+}
