@@ -20,9 +20,14 @@
 
 <header>
   
-  <div class="hamburger">
+  <!-- <div class="hamburger">
       <i class="fa fa-bars fa-2x"></i>
-  </div>
+  </div> -->
+  <div class="button-container">
+   <button class="hamburger hamburger-plus">
+     <span>toggle menu</span>
+   </button>
+  </div> 
   <div class="container header-container">
    <!--  <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
