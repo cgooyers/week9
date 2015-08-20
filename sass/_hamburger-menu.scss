@@ -1,0 +1,234 @@
+// HAMBURGER STYLES
+
+$button-width: 66px;                    // The width of the button area
+$button-height: 66px;                   // The height of the button area
+$bar-thickness: 5px;                    // The thickness of the button bars
+$button-pad: 10px;                      // The left/right padding between button area and bars.
+$button-bar-space: 12px;                // The spacing between button bars
+$button-transistion-duration: 0.3s;     // The transition duration
+
+.hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: $button-width;
+  height: $button-height;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  background-color: transparent;
+
+
+}	
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  right: 18px;
+  height: 5px;
+  background: black;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  content: "";
+}
+
+.hamburger span::before {
+  top: -12px;
+}
+
+.hamburger span::after {
+  bottom: -12px;
+}
+
+.hamburger-plus span {
+  transition: background 0s 0.4s;
+}
+
+.hamburger-plus span::before,
+.hamburger-plus span::after {
+  transition-duration: 0.4s, 0.4s;
+  transition-delay: 0.4s, 0s;
+}
+
+.hamburger-plus span::before {
+  transition-property: top, transform;
+}
+
+.hamburger-plus span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.hamburger-plus.is-active span {
+  background: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+.hamburger-plus.is-active span::before {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.hamburger-plus.is-active span::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+
+.hamburger-plus.is-active span::before,
+.hamburger-plus.is-active span::after {
+  transition-delay: 0s, 0.4s;
+}
+
+//HEADER STYLES
+.button-container {
+	position: absolute;
+	right:0;
+	top: 0;
+	z-index: 10;
+}
+.button-container, .button-container:after {
+	color: black;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 5px;
+
+}
+
+// .hamburger-plus.is-active, .show.is-active  {
+// 		background-color: white;
+// }
+// .hamburger {
+// 	display: flex;
+// 	justify-content: flex-end;
+// 	padding: 20px 10px;
+//    	vertical-align: middle;
+//    	i {
+// 	   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+// 	   backface-visibility: hidden;
+// 	   -moz-osx-font-smoothing: grayscale;
+// 	   transition: all 0.3s ease;
+// 	   transform: translateZ(0) scale(1);
+// 	   &:hover, 
+// 	   &:focus, 
+// 	   &:active {
+// 	   	transform: scale(1.2);
+// 	   }
+//    	}
+// }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    -ms-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideOutRight {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    -ms-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+}
+
+.slideOutRight {
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
+}
+
+
+
+.header-container {
+	background: white;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 75px;
+	// display: none;
+	opacity: 1;
+	// transition: all 0.5s ease;
+	-webkit-transform: translateX(2000px);
+	-ms-transform: translateX(2000px);
+	transform: translateX(2000px);
+	padding: 0 0 10px 0;
+	&.hide {
+		// display: block;
+		opacity: 0;
+	}
+	&.transition-in {
+		-webkit-animation-name: slideInRight;
+		animation-name: slideInRight;
+	}
+	&.transition-out {
+		-webkit-animation-name: slideOutRight;
+		animation-name: slideOutRight;
+	}
+}
+

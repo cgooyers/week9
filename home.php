@@ -13,8 +13,8 @@
         <section class="content home-sections" style="background-image: url(<?php echo $image_src ?>)">
           
           <div class="section-container"> 
+            <h1>christina gooyers</h1>
             <p><?php the_content(); ?></p> 
-            <h1>FRONT-END DEVELOPER</h1>
             <h2><?php the_title(); ?></h2>
             
           </div>
