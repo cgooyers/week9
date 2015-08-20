@@ -5,15 +5,20 @@ ul.menu {
     margin: 15px 100px 0 0;
 	li {
 		margin-right: 10px;
+		text-transform: uppercase;
+		transition: all 0.5s ease;
 		a {
-			color: #333;
+		
+			font-size: 13px;
 			padding: 10px;
-			background: #333;
-			color: white;
+			color: black;
 		}
 	}
 	li,
 	a {
 		display: inline-block;
+	}
+	li:hover {
+		background: $yellow;
 	}
 }

@@ -12,8 +12,12 @@
         <?php $image_src = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
         <section class="content home-sections" style="background-image: url(<?php echo $image_src ?>)">
           
-          <h2><?php the_title(); ?></h2>
-          <?php the_content(); ?>
+          <div class="section-container"> 
+            <p><?php the_content(); ?></p> 
+            <h1>FRONT-END DEVELOPER</h1>
+            <h2><?php the_title(); ?></h2>
+            
+          </div>
 
         </section> <!-- /,content -->
       <?php endwhile; // end the loop?>

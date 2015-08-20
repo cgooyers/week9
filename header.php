@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   
 
   <?php // Load our CSS ?>
@@ -19,14 +21,14 @@
 <body <?php body_class(); ?>>
 
 <header class="main-header">
-  <h1>Christina Codes</h1>
+  <img src="diamond-small.png" alt="">
 
   <div class="button-container">
    <button class="hamburger hamburger-plus">
      <span>toggle menu</span>
    </button>
   </div> 
-  <div class="container header-container">
+  <div class="container header-container animated transition-out hide">
    <!--  <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
