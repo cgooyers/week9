@@ -37,6 +37,8 @@
           ?>
           <section class="home-sections section" style="background-image: url(<?php echo $image_src ?> )">
             <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+            <i class="fa fa3x  <?php the_field('font_awesome'); ?>"></i>
+           
           </section>
           <?php
         }
