@@ -9,6 +9,7 @@ ul.menu {
 		margin-right: 10px;
 		text-transform: uppercase;
 		transition: all 0.2s ease;
+
 		
 		a {
 			transition: all 0.2s ease;
@@ -23,7 +24,8 @@ ul.menu {
 		display: inline-block;
 	}
 	a:hover {
-		border-bottom: 1px solid $yellow;
+		background: $yellow;
 		transition: all 0.2s ease;
 	}
 }
+

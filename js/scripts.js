@@ -1,4 +1,8 @@
 "use strict";
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
+
 $(function(){
 	$('.hamburger').on('click', function(){
 
@@ -25,3 +29,4 @@ $(function(){
 
 
 });
+
