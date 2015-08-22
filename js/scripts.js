@@ -1,7 +1,5 @@
 "use strict";
-$(document).ready(function() {
-    $('#fullpage').fullpage();
-});
+  
 
 $(function(){
 	$('.hamburger').on('click', function(){
@@ -10,6 +8,11 @@ $(function(){
 		$(this).find('i').toggleClass('fa-bars fa-times')
 	});
 
+
+	$('#fullpage').fullpage({
+   		anchors:['home', 'about', 'work', 'contact']
+	  	
+	});
 
 
 

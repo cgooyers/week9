@@ -47,6 +47,29 @@ span.highlight {
 	
 }
 
+.section-content {
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 15px 10px;
+	text-align: center;
+	p {
+		font-size: 14px;
+		text-align: left;
+		text-transform: capitalize;
+		line-height: 28px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	span {
+		font-weight: 600;
+	}
+	i {
+		font-size: 40px;
+	}	
+}
+
 section.content, section {
 	display: flex;
 	flex-direction: column-reverse;
