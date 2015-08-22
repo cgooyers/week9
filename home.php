@@ -41,18 +41,19 @@
               <i class="fa  <?php the_field('font_awesome'); ?>"></i>
               <p><?php the_content(); ?></p>
               <?php if( have_rows('work') ): while ( have_rows('work') ) : the_row(); ?>
-                <div class="image-text">
-                  <h1><?php the_sub_field('image_title'); ?></h1>
-                  <p><?php the_sub_field('image_description'); ?></p>
-                  <button><?php the_sub_field('link'); ?></button>
+                <div class="work-container">
+                  <div class="image-text">
+                    <h1><?php the_sub_field('image_title'); ?></h1>
+                    <p><?php the_sub_field('image_description'); ?></p>
+                    <button><?php the_sub_field('link'); ?></button>
+                  </div>
+                  <?php 
+                  $image = get_sub_field('image');
+                  ?>
+                  <div class="image-container" style="background-image: url( )">
+                    <img src="<?php echo $image['url'] ?>" alt="">
+                  </div>
                 </div>
-                <?php 
-                $image = get_sub_field('image');
-                ?>
-                <div class="image-container" style="background-image: url( )">
-                  <img src="<?php echo $image['url'] ?>" alt="">
-                </div>
-
                 <? endwhile; else : endif; ?>
             </div>
           </section>
