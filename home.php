@@ -39,6 +39,7 @@
             <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
             <div class="section-content">
               <i class="fa  <?php the_field('font_awesome'); ?>"></i>
+              <h1><?php the_sub_field('section_label'); ?></h1>
               <p><?php the_content(); ?></p>
               <?php if( have_rows('work') ): while ( have_rows('work') ) : the_row(); ?>
                 <div class="work-container">

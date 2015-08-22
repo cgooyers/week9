@@ -19,7 +19,7 @@
 <body <?php body_class(); ?>>
 
 <header class="main-header">
-  <img src="diamond-small.png" alt="">
+  <img src="dime.png" alt="">
 
   <div class="button-container">
    <button class="hamburger hamburger-plus">
