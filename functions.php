@@ -63,6 +63,14 @@ function hackeryou_scripts() {
     true //load in footer
   );
 
+	wp_enqueue_script(
+    'scroll-thing', //handle
+    get_template_directory_uri() . '/bower_components/onepage-scroll/jquery.onepage-scroll.min.js', //source
+    false, //dependencies
+    null, // version number
+    true //load in footer
+  );
+	
   wp_enqueue_script(
     'scripts', //handle
     get_template_directory_uri() . '/js/scripts.js', //source

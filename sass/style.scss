@@ -37,14 +37,14 @@ span.highlight {
 }
 
 .container {
-	
+
 	margin: 0 auto;
 }
 .home-sections {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;	
-	
+	background-size: cover;
+
 }
 
 .section-content {
@@ -67,7 +67,7 @@ span.highlight {
 	}
 	i {
 		font-size: 55px;
-	}	
+	}
 }
 
 section.content, section {
@@ -118,12 +118,12 @@ section.content, section {
 	h1 {
 		font-size: 13px;
 		background: $yellow;
-		
+
 	}
 	p {
 		line-height: 20px;
 		margin: 10px 0;
-		
+
 
 	}
 	h1 {
@@ -163,17 +163,28 @@ section.content, section {
 	overflow:hidden;
 	padding: 12px 15px 20px 0;
 	z-index: 100;
-	
+
 	img {
 		display: inline-block;
 		position: relative;
 		z-index: 15;
 		padding: 5px 0 0 4%;
 
-		
+
 	}
 }
 
+iframe#wufooFormzyecgec0vkygl2 {
+	#container {
+		#form1 {
+			header#header {
+				h2 {
+					visibility: hidden;
+				}
+			}
+		}	
+	}
+}
 
 //FOOTER STYLES
 footer {

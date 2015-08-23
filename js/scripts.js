@@ -1,20 +1,16 @@
 "use strict";
-  
 
-$(function(){
-	$('.hamburger').on('click', function(){
 
-		$('.header-container').toggleClass('transition-in transition-out').removeClass('hide');	
+$(function() {
+	$('.hamburger').on('click', function() {
+
+		$('.header-container').toggleClass('transition-in transition-out').removeClass('hide');
 		$(this).find('i').toggleClass('fa-bars fa-times')
 	});
 
-
 	$('#fullpage').fullpage({
    		anchors:['home', 'about', 'work', 'contact']
-	  	
 	});
-
-
 
 	var toggles = document.querySelectorAll(".hamburger");
 
@@ -32,4 +28,3 @@ $(function(){
 
 
 });
-
