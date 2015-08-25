@@ -47,7 +47,9 @@ span.highlight {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	
+	p {
+		font-size: 16px;
+	}
 }
 
 // SECTION STYLES
@@ -95,7 +97,7 @@ section.content, section {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 
-	h1, h2, a {
+	h1.home, h2, a {
 		font-size: 5rem;
 		color: black;
 		padding: 0;
@@ -140,7 +142,13 @@ section.content, section {
 	font-size: 12px;
 	text-align: left;
 	font-weight: 300;
+	margin: 5%;
+	border: 1px solid #FFF000;
+	h1 {
+		font-size: 18px;
+		background: $yellow;
 
+	}
 	p {
 		line-height: 20px;
 		margin: 10px 0;
@@ -176,7 +184,7 @@ section.content, section {
 		flex-wrap: wrap;
 		width: 50%;
 		text-align: left;
-		background-color: $yellow;
+		margin: 2%;
 	}
 	.image-container {
 		width: 50%;
