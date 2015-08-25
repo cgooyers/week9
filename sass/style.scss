@@ -98,7 +98,7 @@ section.content, section {
 		color: black;
 		margin-bottom: 6%;
 		padding: 0;
-		line-height: 70px;
+		// line-height: 70px;
 		letter-spacing: 2px;
 	}
 	a {
@@ -127,13 +127,13 @@ section.content, section {
 }
 
 .work-container {
-	display: flex;
-	justify-content: space-between;
-	margin-left: 1%;
-	margin-right: 1%;
-	font-size: 12px;
-	text-align: left;
-	font-weight: 300;
+	// display: flex;
+	// justify-content: space-between;
+	// margin-left: 1%;
+	// margin-right: 1%;
+	// font-size: 12px;
+	// text-align: left;
+	// font-weight: 300;
 	h1 {
 		font-size: 13px;
 		background: $yellow;
@@ -187,13 +187,11 @@ section.content, section {
   text-align: left;
   font-weight: 300;
   border: 1px solid $yellow;
-  padding: 0 10px; }
+  margin: 0; }
   .work-container h1 {
-    font-size: 18px;
+    font-size: 16px;
     background: $yellow; }
-  .work-container p {
-    line-height: 20px;
-    paddig: 5px 0; }
+ 
   .work-container h1 {
     padding: 0;
     margin: 0; }
@@ -214,6 +212,7 @@ section.content, section {
     .work-container.right-work img {
       width: 100%; }
   .work-container .image-text {
+  	font-size: 13px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -253,8 +252,6 @@ section.content, section {
 	}
 }
 
-
-
 //FOOTER STYLES
 footer {
 	background: white;
@@ -266,4 +263,25 @@ footer {
 		padding: 10px 0;
 		font-size: 12px;
 	}
+}
+
+ // MEDIA QUERIES
+@media all and (max-width: 750px) {
+	.work-container.right-work {
+		display: block;
+		width: 100%;
+}
+
+
+.content {
+ 	height: 100vh;
+}
+
+section {
+
+		.home-sections, a {
+			position: relative;
+		}
+	}
+
 }
