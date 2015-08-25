@@ -59,7 +59,7 @@
                     <p><?php the_sub_field('image_description'); ?></p>
                     <button><?php the_sub_field('link'); ?></button>
                   </div>
-                <div class="form-container"></div>
+                
                   <?php
                   $image = get_sub_field('image');
                   ?>
