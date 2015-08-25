@@ -37,7 +37,7 @@
           ?>
           <section class="home-sections section" data-anchor= "<?php echo strtolower(get_the_title())?>" style="background-image: url(<?php echo $image_src ?> )">
 
-            <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+            <h2><a href="#<?php echo strtolower(get_the_title())?>"><?php the_title() ?><i class="fa fa-angle-up animate infinite bounce"></i></a></h2>
             <div class="section-content">
               <i class="fa  <?php the_field('font_awesome'); ?>"></i>
               <h1><?php the_sub_field('section_label'); ?></h1>
@@ -46,9 +46,11 @@
               <?php if( have_rows('work') ): while ( have_rows('work') ) : the_row(); ?>
 
                 <?php $count = $count + 1;
-                  $class;
                   if( $count % 2 == 0) {
                     $even_class = 'right-work';
+                  }
+                  else {
+                    $even_class = '';
                   }
                 ?>
                 <div class="work-container <?php echo $even_class ?>">
@@ -73,7 +75,7 @@
       }
 
     ?>
-    
+
   <?php get_footer(); ?>
   </div> <!-- /.container -->
 

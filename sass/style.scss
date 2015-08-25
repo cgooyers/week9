@@ -70,6 +70,17 @@ span.highlight {
 	}
 }
 
+.section-content {
+	opacity: 0;
+	transition: all .3s ease;
+	&.show {
+		opacity: 1;
+		transition: all .3s ease;
+	}
+
+}
+
+
 section.content, section {
 	display: flex;
 	flex-direction: column-reverse;
@@ -92,6 +103,10 @@ section.content, section {
 		position: absolute;
 		bottom: 0;
 		left: 3%;
+		i.fa-angle-right {
+			margin-left: 15px;
+			font-size: 52px;
+		}
 	}
 }
 
@@ -141,12 +156,24 @@ section.content, section {
 		letter-spacing: 1px;
 		background: white;
 	}
+	&.right-work {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		img {
+
+		}
+	}
 	.image-text {
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
 		width: 50%;
 		text-align: left;
+		background-color: $yellow;
+	}
+	.image-container {
+		width: 50%;
 	}
 }
 
@@ -182,7 +209,7 @@ iframe#wufooFormzyecgec0vkygl2 {
 					visibility: hidden;
 				}
 			}
-		}	
+		}
 	}
 }
 

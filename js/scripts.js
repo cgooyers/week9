@@ -26,5 +26,10 @@ $(function() {
 		});
 	}
 
+	$('.fp-tableCell').each(function() {
+		$(this).on('click', function() {
+			$(this).find('.section-content').toggleClass('show');
+		});
+	});
 
 });
