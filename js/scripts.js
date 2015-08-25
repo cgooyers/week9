@@ -8,11 +8,31 @@ $(function() {
 		$(this).find('i').toggleClass('fa-bars fa-times')
 	});
 
-	$('#fullpage').fullpage({
-   		anchors:['home', 'about', 'work', 'contact']
-	});
 
-	var toggles = document.querySelectorAll(".hamburger");
+	var removeScroll = function() {
+
+		var screenWidth = $(window).width();
+		if (screenWidth < 750) {
+			$('.main').attr('id', '');
+		}
+
+		$('#fullpage').fullpage({
+		  anchors:['home', 'about', 'work', 'contact']
+		});
+
+		$(window).on('resize', function() {
+			var screenWidth = $(window).width();
+			if (screenWidth < 750) {
+				$.fn.fullpage.destroy();
+			} else {
+				$.fn.fullpage.reBuild();
+			}
+		});
+	};
+
+	removeScroll();
+
+	var toggles = $(".hamburger");
 
 	for (var i = toggles.length - 1; i >= 0; i--) {
 		var toggle = toggles[i];
