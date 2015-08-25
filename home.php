@@ -56,10 +56,13 @@
                 <div class="work-container <?php echo $even_class ?>">
                   <div class="image-text">
                     <h1><?php the_sub_field('image_title'); ?></h1>
-                    <p><?php the_sub_field('image_description'); ?></p>
+                    <p><?php the_sub_field('image_description'); ?>
+                        <span class="team">Team members: <?php the_sub_field('team_members'); ?></span>
+                    </p>
+
                     <button><?php the_sub_field('link'); ?></button>
                   </div>
-                
+
                   <?php
                   $image = get_sub_field('image');
                   ?>

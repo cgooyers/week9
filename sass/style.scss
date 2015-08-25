@@ -66,7 +66,7 @@ span.highlight {
 		text-transform: capitalize;
 		line-height: 28px;
 		letter-spacing: 1px;
-		font-weight: 300;
+		font-weight: 400;
 	}
 	span {
 		font-weight: 600;
@@ -77,6 +77,8 @@ span.highlight {
 }
 
 .section-content {
+	position: relative;
+	z-index: 25;
 	opacity: 0;
 	transition: all .3s ease;
 	&.show {
@@ -137,12 +139,9 @@ section.content, section {
 .work-container {
 	display: flex;
 	justify-content: space-between;
-	margin-left: 1%;
-	margin-right: 1%;
 	font-size: 12px;
 	text-align: left;
 	font-weight: 300;
-	margin: 5%;
 	border: 1px solid #FFF000;
 	h1 {
 		font-size: 18px;
@@ -184,7 +183,12 @@ section.content, section {
 		flex-wrap: wrap;
 		width: 50%;
 		text-align: left;
-		margin: 2%;
+		padding: 2%;
+		span.team {
+			font-weight: 300;
+			font-size: 12px;
+			text-transform: capitalize;
+		}
 	}
 	.image-container {
 		width: 50%;
