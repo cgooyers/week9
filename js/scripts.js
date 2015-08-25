@@ -26,10 +26,14 @@ $(function() {
 		});
 	}
 
-	$('.fp-tableCell').each(function() {
-		$(this).on('click', function() {
-			$(this).find('.section-content').toggleClass('show');
-		});
+	// $('.fp-tableCell').each(function() {
+	// 	$(this).on('click', function() {
+	// 		$(this).find('.section-content').toggleClass('show');
+	// 	});
+	// });
+
+	$('.fp-section').on('click', function() {
+		$(this).find('.section-content').toggleClass('show');
 	});
 
 });
