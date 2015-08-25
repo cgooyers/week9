@@ -73,6 +73,8 @@ span.highlight {
 .section-content {
 	opacity: 0;
 	transition: all .3s ease;
+	position: relative;
+	z-index: 25;
 	&.show {
 		opacity: 1;
 		transition: all .3s ease;
@@ -91,17 +93,17 @@ section.content, section {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 
-	h2, a {
-		font-size: 3rem;
+	h1, h2, a {
+		font-size: 5rem;
 		color: black;
-		margin-bottom: -17px;
+		margin-bottom: 6%;
 		padding: 0;
 		line-height: 70px;
 		letter-spacing: 2px;
 	}
 	a {
 		position: absolute;
-		bottom: 0;
+		bottom: 6%;
 		left: 3%;
 		i.fa-angle-right {
 			margin-left: 15px;
