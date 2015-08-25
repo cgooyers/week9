@@ -96,10 +96,13 @@ section.content, section {
 	h1, h2, a {
 		font-size: 5rem;
 		color: black;
-		margin-bottom: 6%;
 		padding: 0;
 		// line-height: 70px;
 		letter-spacing: 2px;
+	}
+
+	h1 {
+		margin-bottom: 6%;
 	}
 	a {
 		position: absolute;
@@ -108,8 +111,8 @@ section.content, section {
 		i.fa-angle-up {
 			font-size: 48%;
 			position: absolute;
-			top: 0;
-			right: -14%;
+			top: 18px;
+			right: -13%;
 		}
 	}
 }
