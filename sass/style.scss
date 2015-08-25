@@ -60,7 +60,7 @@ span.highlight {
 		text-transform: capitalize;
 		line-height: 28px;
 		letter-spacing: 1px;
-		font-weight: 300;
+		font-weight: 400;
 	}
 	span {
 		font-weight: 600;
@@ -105,9 +105,11 @@ section.content, section {
 		position: absolute;
 		bottom: 6%;
 		left: 3%;
-		i.fa-angle-right {
-			margin-left: 15px;
-			font-size: 52px;
+		i.fa-angle-up {
+			font-size: 48%;
+			position: absolute;
+			top: 0;
+			right: -14%;
 		}
 	}
 }
