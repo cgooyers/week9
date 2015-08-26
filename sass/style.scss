@@ -36,44 +36,34 @@ span.highlight {
 	background: $yellow;
 }
 
-// MAIN STYLES
 .container {
 
 	margin: 0 auto;
 }
+
 .home-sections {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-
 }
 
-section.pointer {
-	cursor: pointer; 
-}
-
-.section-container {
-	position: absolute;
-	bottom: 0;
-	left: 3%;
-	.title-info {
-
-		h1 {
-			margin: 0;
+section#clouds {
+	.cloudOne {
+			background: url(../images/sky4.png);
+			right: 0;
+			bottom: 0;
+			height: 50%;
+			opacity: .7;
+			z-index: 9;
+			-webkit-animation: 80s linear infinite;
 		}
-		p {
-			line-height: 2.3rem;
-		}
-	}
-}
-
-// HOME SECTION STYLES
+	}	
 
 .section-content {
 	background: rgba(255, 255, 255, 0.9);
 	border-radius: 5px;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
 	padding: 15px 10px;
 	text-align: center;
 	p {
@@ -104,6 +94,9 @@ section.pointer {
 
 }
 
+section.pointer:hover {
+	cursor: pointer;
+}
 
 section.content, section {
 	display: flex;
@@ -135,6 +128,18 @@ section.content, section {
 			position: absolute;
 			top: 18px;
 			right: -13%;
+		}
+	}
+}
+
+.section-container {
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+	.title-info {
+
+		h1 {
+			margin: 0;
 		}
 	}
 }
@@ -217,7 +222,6 @@ section.content, section {
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 1px;
-    margin-top: 8%;
     background: white; }
   .work-container.right-work {
     display: flex;
@@ -232,14 +236,7 @@ section.content, section {
     flex-wrap: wrap;
     width: 50%;
     text-align: left;
-    padding: 1% 2%;
-		p {
-			margin: 0;
-			height: 70px;
-			padding-top: 5%;
-
-		}
-     }
+    padding: 1% 2%; }
     .work-container .image-text span.team {
       font-weight: 300;
       font-size: 12px;
@@ -288,7 +285,7 @@ footer {
 
  // MEDIA QUERIES
 @media all and (max-width: 750px) {
-	.work-container.right-work {
+	.work-container {
 		display: block;
 		width: 100%;
 		.image-text,
