@@ -207,6 +207,7 @@ section.content, section {
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 1px;
+    margin-top: 8%;
     background: white; }
   .work-container.right-work {
     display: flex;
@@ -221,7 +222,14 @@ section.content, section {
     flex-wrap: wrap;
     width: 50%;
     text-align: left;
-    padding: 1% 2%; }
+    padding: 1% 2%;
+		p {
+			margin: 0;
+			height: 70px;
+			padding-top: 5%;
+
+		}
+     }
     .work-container .image-text span.team {
       font-weight: 300;
       font-size: 12px;
@@ -270,7 +278,7 @@ footer {
 
  // MEDIA QUERIES
 @media all and (max-width: 750px) {
-	.work-container {
+	.work-container.right-work {
 		display: block;
 		width: 100%;
 		.image-text,
