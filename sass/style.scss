@@ -41,23 +41,76 @@ span.highlight {
 	margin: 0 auto;
 }
 
+.title-info {
+	p {
+		line-height: 2.3rem;
+	}
+}
+
 .home-sections {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
-section#clouds {
-	.cloudOne {
-			background: url(../images/sky4.png);
-			right: 0;
-			bottom: 0;
-			height: 50%;
-			opacity: .7;
-			z-index: 9;
-			-webkit-animation: 80s linear infinite;
-		}
-	}	
+.animationContainer {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 300%;
+}
+
+.firstContainer,
+.secondContainer {
+  position: absolute;
+  height: 60%;
+  width: 300%;
+  -o-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.firstContainer {
+  bottom: 0;
+  right: 0;
+  background: url(images/cloud3.png); 
+  opacity: 0.8;
+  -o-animation: christina_right 300s linear infinite;
+  -moz-animation: christina_right 300s linear infinite;
+  -webkit-animation: christina_right 300s linear infinite;
+}
+
+.secondContainer {
+  bottom: 0;
+  right: 0;
+  background: url(images/cloud2.png);
+  opacity: 0.4;
+  -o-animation: christina_left 400s linear infinite;
+  -moz-animation: christina_left 400s linear infinite;
+  -webkit-animation: christina_left 400s linear infinite;
+}
+
+
+@-webkit-keyframes christina_right {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+
+
+@-webkit-keyframes christina_left {
+  0% {
+      right: 0;
+  }
+  100% {
+      right: -200%;
+  }
+}
+	
+// end of cloud animation 
 
 .section-content {
 	background: rgba(255, 255, 255, 0.9);
@@ -103,7 +156,6 @@ section.content, section {
 	flex-direction: column-reverse;
 	width: 100%;
 	margin: 0;
-	padding: 0 2% 0 2%;
 	overflow: hidden;
 	text-transform: uppercase;
 	letter-spacing: 2px;

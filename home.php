@@ -11,7 +11,10 @@
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <?php $image_src = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
         <section class="content home-sections section" data-anchor="home" style="background-image: url(<?php echo $image_src ?>)">
-
+          <div class="animationContainer">
+            <div class="firstContainer"></div>
+            <div class="secondContainer"></div>
+          </div>
           <div class="section-container">
             <div class="title-info">
 
@@ -71,14 +74,16 @@
                     </div>
                   
                 <? endwhile; else : endif; ?>
+
             </div>
+
           </section>
           <?php
         }
       }
 
     ?>
-
+  
   <?php get_footer(); ?>
   </div> <!-- /.container -->
 
