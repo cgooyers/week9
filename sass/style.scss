@@ -270,21 +270,25 @@ footer {
 
  // MEDIA QUERIES
 @media all and (max-width: 750px) {
-	.work-container.right-work {
+	.work-container {
 		display: block;
 		width: 100%;
-}
-
-
-.content {
- 	height: 100vh;
-}
-
-section {
-
-		.home-sections, a {
-			position: relative;
+		.image-text,
+		.image-container
+		.right-work {
+			display: block !important;
+			width: 100%;
 		}
 	}
+	
 
+	.content {
+	 	height: 100vh;
+	}
+
+	section {
+		.home-sections, a {
+				position: relative;
+		}
+	}
 }
