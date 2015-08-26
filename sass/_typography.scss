@@ -3,6 +3,7 @@ a {
 	text-decoration: none;
 	&:hover {
 		background: $yellow;
+		cursor: pointer;
 	}
 }
 

@@ -52,7 +52,7 @@ span.highlight {
 	background-position: center;
 	background-size: cover;
 }
-
+// start of cloude animation styles
 .animationContainer {
   position: relative;
   overflow: hidden;
@@ -147,6 +147,21 @@ span.highlight {
 
 }
 
+.section-content.show{
+	h1 {
+		margin: 0;
+
+	}
+	p {
+		text-transform: none;
+	}
+	p.title {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 600;
+	}
+}
 // .section-content:hover {
 // 	cursor: pointer;
 // }
@@ -184,7 +199,7 @@ section.content, section {
 	}
 }
 
-section.pointer {
+section.pointer:hover {
 	cursor: pointer;
 }
 
@@ -325,6 +340,7 @@ section.pointer {
 
 	}
 }
+
 
 //FOOTER STYLES
 footer {
