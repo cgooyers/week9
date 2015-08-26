@@ -36,6 +36,7 @@ span.highlight {
 	background: $yellow;
 }
 
+// MAIN STYLES
 .container {
 
 	margin: 0 auto;
@@ -46,6 +47,27 @@ span.highlight {
 	background-size: cover;
 
 }
+
+section.pointer {
+	cursor: pointer; 
+}
+
+.section-container {
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+	.title-info {
+
+		h1 {
+			margin: 0;
+		}
+		p {
+			line-height: 2.3rem;
+		}
+	}
+}
+
+// HOME SECTION STYLES
 
 .section-content {
 	background: rgba(255, 255, 255, 0.9);
@@ -113,22 +135,6 @@ section.content, section {
 			position: absolute;
 			top: 18px;
 			right: -13%;
-		}
-	}
-}
-
-section.pointer {
-	cursor: pointer; 
-}
-
-.section-container {
-	position: absolute;
-	bottom: 0;
-	left: 3%;
-	.title-info {
-
-		h1 {
-			margin: 0;
 		}
 	}
 }
