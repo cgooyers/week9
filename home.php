@@ -35,9 +35,9 @@
           $loopQuery->the_post();
           $image_src = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
           ?>
-          <section class="home-sections section pointer" data-anchor= "<?php echo strtolower(get_the_title())?>" style="background-image: url(<?php echo $image_src ?> )">
+          <section id="pointer" class="home-sections section" data-anchor= "<?php echo strtolower(get_the_title())?>" style="background-image: url(<?php echo $image_src ?> )">
 
-            <h2><a href="#<?php echo strtolower(get_the_title())?>"><?php the_title() ?><i class="fa fa-angle-up animate infinite bounce"></i></a></h2>
+            <h2><a href="#<?php echo strtolower(get_the_title())?>"><?php the_title() ?></a></h2>
             <div class="section-content">
               <i class="fa  <?php the_field('font_awesome'); ?>"></i>
               <h1><?php the_sub_field('section_label'); ?></h1>
