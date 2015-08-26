@@ -94,9 +94,9 @@ section#clouds {
 
 }
 
-.section-content:hover {
-	cursor: pointer;
-}
+// .section-content:hover {
+// 	cursor: pointer;
+// }
 
 section.content, section {
 	display: flex;
@@ -130,6 +130,10 @@ section.content, section {
 			right: -13%;
 		}
 	}
+}
+
+section.pointer {
+	cursor: pointer;
 }
 
 .section-container {
