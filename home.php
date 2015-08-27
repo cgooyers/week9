@@ -62,7 +62,11 @@
                         <h1><?php the_sub_field('image_title'); ?></h1>
                         <p><?php the_sub_field('image_description'); ?></p>
 
-                        <button><?php the_sub_field('link'); ?></button>
+                        <?php if(get_sub_field('link')) { ?>
+                          <a href="<?php the_sub_field('link') ?>">
+                            <button>View Demo</button> 
+                          </a>
+                        <?php } ?>
                       </div>
 
                       <?php
