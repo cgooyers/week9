@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
   <?php wp_head(); ?>
+  <meta name="google-site-verification" content="RXG2NuzdrKQS0IblPLq4wJBWhyAp4svzVX8NFVY7TXA" />
 </head>
 
 
