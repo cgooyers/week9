@@ -56,15 +56,16 @@
                     $even_class = '';
                   }
                 ?>
-                
+
                     <div class="work-container <?php echo $even_class ?>">
                       <div class="image-text">
-                        <h1><?php the_sub_field('image_title'); ?></h1>
+                        <span class="work-title">
+                          <?php the_sub_field('image_title'); ?></span class="work-title">
                         <p><?php the_sub_field('image_description'); ?></p>
 
                         <?php if(get_sub_field('link')) { ?>
-                          <a href="<?php the_sub_field('link') ?>">
-                            <button>View Demo</button> 
+                          <a class= "view-demo" href="<?php the_sub_field('link') ?>">
+                            <button>View Demo</button>
                           </a>
                         <?php } ?>
                       </div>
@@ -76,7 +77,6 @@
                         <img src="<?php echo $image['url'] ?>" alt="">
                       </div>
                     </div>
-                  
                 <? endwhile; else : endif; ?>
 
             </div>
@@ -87,7 +87,7 @@
       }
 
     ?>
-  
+
   <?php get_footer(); ?>
   </div> <!-- /.container -->
 

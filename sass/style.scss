@@ -120,7 +120,7 @@ span.highlight {
 	padding: 4px 10px;
 	text-align: center;
 	p {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		text-align: left;
 		text-transform: capitalize;
 		line-height: 28px;
@@ -198,6 +198,14 @@ section.content, section {
 			right: -13%;
 		}
 	}
+	a.view-demo {
+		position: relative;
+		bottom: 30px;
+		left: 0;
+		&:hover {
+		background: transparent;
+		}
+	}
 }
 
 section.pointer:hover {
@@ -216,6 +224,7 @@ section.pointer:hover {
 	}
 }
 
+// START OF WORK STYLES
 .work-container {
 	// display: flex;
 	// justify-content: space-between;
@@ -230,8 +239,8 @@ section.pointer:hover {
 
 	}
 	p {
-		line-height: 20px;
-		margin: 10px 0;
+		line-height: 25px;
+		margin: 20px 0 0 0;
 
 
 	}
@@ -239,24 +248,11 @@ section.pointer:hover {
 		padding: 0;
 		margin: 0;
 	}
-	button {
-		border: 2px solid $yellow;
-		border-radius: 5px;
-		height: 25px;
-		padding: 0 5px;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 10px;
-		letter-spacing: 1px;
-		background: white;
-	}
+
 	&.right-work {
 		display: flex;
 		justify-content: space-between;
 		flex-direction: row-reverse;
-		img {
-
-		}
 	}
 	.image-text {
 		display: flex;
@@ -265,6 +261,10 @@ section.pointer:hover {
 		width: 50%;
 		text-align: left;
 		padding: 3px 0;
+		span.work-title {
+			font-size: 1rem;
+			padding-top: 30px;
+		}
 	}
 	.image-container {
 		width: 50%;
@@ -280,21 +280,22 @@ section.pointer:hover {
   margin: 0; }
   .work-container h1 {
     font-size: 16px;
-    background: $yellow; }
+   }
 
   .work-container h1 {
     padding: 0;
     margin: 0; }
   .work-container button {
-    border: 2px solid $yellow;
     border-radius: 5px;
     height: 25px;
     padding: 0 5px;
     text-align: center;
     text-transform: uppercase;
     font-size: 10px;
-    letter-spacing: 1px;
-    background: white; }
+    letter-spacing: 1.5px;
+    background: $yellow;
+		border: none;
+	}
   .work-container.right-work {
     display: flex;
     justify-content: space-between;
