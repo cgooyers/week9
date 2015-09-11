@@ -10,17 +10,17 @@ ul.menu {
 		text-transform: uppercase;
 		transition: all 0.2s ease;
 
-		
+
 		a {
 			transition: all 0.2s ease;
 			font-size: 13px;
-			padding: 3px 10px;
+			padding: 5px 10px;
 			color: black;
 		}
 	}
 	li,
 	a {
-		
+
 		display: inline-block;
 	}
 	a:hover {
@@ -28,4 +28,3 @@ ul.menu {
 		transition: all 0.2s ease;
 	}
 }
-
