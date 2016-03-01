@@ -17,27 +17,30 @@
   <meta name="google-site-verification" content="RXG2NuzdrKQS0IblPLq4wJBWhyAp4svzVX8NFVY7TXA" />
 </head>
 
-
 <body <?php body_class(); ?>>
+  <div class="grid">
+  <header class="main-header">
+    <div class="grid__item one-half portable--one-third">
+      <img id="dime" src="dime.png" alt="">
+    </div>
+    <div class="grid__item one-half portable--two-thirds palm--one-whole">
+      <div class="button-container">
+       <button class="hamburger hamburger-plus">
+         <span>toggle menu</span>
+       </button>
+      </div>
+    </div>
+    <div class="container header-container animated transition-out hide">
+     <!--  <h1>
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+          <?php bloginfo( 'name' ); ?>
+        </a>
+      </h1>  -->
 
-<header class="main-header">
-  <img src="dime.png" alt="">
-
-  <div class="button-container">
-   <button class="hamburger hamburger-plus">
-     <span>toggle menu</span>
-   </button>
-  </div>
-  <div class="container header-container animated transition-out hide">
-   <!--  <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>  -->
-
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
-  </div> <!-- /.container -->
-</header><!--/.header-->
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'primary'
+      )); ?>
+    </div>
+  </header>
+</div>

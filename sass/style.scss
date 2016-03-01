@@ -52,7 +52,7 @@ span.highlight {
 	background-position: center;
 	background-size: cover;
 }
-// start of cloude animation styles
+// start of cloud animation styles
 .animationContainer {
   position: relative;
   overflow: hidden;
@@ -117,21 +117,30 @@ span.highlight {
 	border-radius: 5px;
 	margin-left: 15%;
 	margin-right: 15%;
-	padding: 4px 10px;
+	padding: 3%;
 	text-align: center;
 	p {
-		font-size: 1.2rem;
 		text-align: left;
 		text-transform: capitalize;
-		line-height: 28px;
-		letter-spacing: 1px;
+		line-height: 22px;
+		letter-spacing: 0.5px;
 		font-weight: 300;
 	}
 	span {
-		font-weight: 600;
+		font-weight: 300;
 	}
 	i {
-		font-size: 55px;
+		font-size: 325%;
+	    position: absolute;
+	    &.fa-diamond {
+	    	top: -6%;
+	    }
+	    &.fa-phone {
+	    	top: -22%;
+	    }
+	    &.fa-code {
+	    	top: -4%;
+	    }
 	}
 }
 
@@ -143,6 +152,7 @@ span.highlight {
 	&.show {
 		opacity: 1;
 		transition: all .3s ease;
+		border: 2.5px solid black;
 	}
 
 }
@@ -196,6 +206,12 @@ section.content, section {
 			position: absolute;
 			top: 18px;
 			right: -13%;
+		}
+		i.fa-plus {
+			font-size: 25px;
+			position: relative;
+			bottom: 18px;
+			left: 15px;
 		}
 	}
 	a.view-demo {
@@ -264,6 +280,7 @@ section.pointer:hover {
 		span.work-title {
 			font-size: 1rem;
 			padding-top: 30px;
+			font-weight: 600;
 		}
 	}
 	.image-container {
@@ -303,7 +320,7 @@ section.pointer:hover {
     .work-container.right-work img {
       width: 100%; }
   .work-container .image-text {
-  	font-size: 13px;
+  	font-size: 14px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -382,26 +399,29 @@ footer {
 }
 
 @media all and (max-width: 500px) {
-	header {
-		img {
-			display: none;
-		}
-		ul.menu {
+
+	img#dime {
+		visibility: hidden;
+	}
+	ul.menu {
+		padding: 0;
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		margin: 4%;
+		width: 80%;
+		transition: all 0.3s ease;
+		li {
+			display: block;
+			flex-grow: 4;
 			padding: 0;
-			display: flex;
-			flex-direction: row-reverse;
-			flex-wrap: wrap;
-			margin: 15px 100px 0 0;
-			transition: all 0.3s ease;
-			li {
-				display: block;
-				flex-grow: 4;
-				padding: 0;
-				margin: 0;
-			}
+			margin: 0;
 		}
 	}
-	section#clouds {
+	.home-sections {
+		background-size: inherit;
+	}
+		section#clouds {
 		.section-container {
 			p {
 				font-size: 16px;
@@ -409,7 +429,14 @@ footer {
 			h1 {
 				font-size: 18px;
 			}
+
 		}
 	}
 
+}
+
+@media all and (max-width: 1074px) {
+	.show {
+		height: 100vh;
+	}
 }
